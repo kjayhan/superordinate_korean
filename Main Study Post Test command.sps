@@ -1,4 +1,5 @@
 ﻿* Encoding: UTF-8.
+##Descriptive statistics
 
 DATASET ACTIVATE DataSet1.
 DESCRIPTIVES VARIABLES=A1 A2 A6_1 A3 A4 A5
