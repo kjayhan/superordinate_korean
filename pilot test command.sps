@@ -1,4 +1,5 @@
 ﻿* Encoding: UTF-8.
+##Descriptive statistics
 
 DATASET ACTIVATE DataSet1.
 DESCRIPTIVES VARIABLES=A1 A2 q9 A3 A4 A5
@@ -21,6 +22,8 @@ EXECUTE.
 
 COMPUTE support=MEAN(E1,E2).
 EXECUTE.
+
+##Reliability
 
 RELIABILITY
   /VARIABLES=C1 C2
@@ -58,11 +61,15 @@ RELIABILITY
   /STATISTICS=DESCRIPTIVE SCALE
   /SUMMARY=TOTAL.
 
+##Manipulation check
+
 T-TEST GROUPS=q10(1 2)
   /MISSING=ANALYSIS
   /VARIABLES=superordinate
   /ES DISPLAY(TRUE)
   /CRITERIA=CI(.95).
+
+##Comparison of experiment and control groups
 
 T-TEST GROUPS=q10(1 2)
   /MISSING=ANALYSIS
